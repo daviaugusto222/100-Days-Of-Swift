@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,6 +46,35 @@
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="18.75"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="iHX-FD-udS">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="5gY-4Q-o3V" customClass="DetailViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qer-iI-rNd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ubt-x7-6bH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JSX-VT-eWP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ubt-x7-6bH" firstAttribute="centerY" secondItem="Qer-iI-rNd" secondAttribute="centerY" id="FgE-BN-6sZ"/>
+                            <constraint firstItem="ubt-x7-6bH" firstAttribute="leading" secondItem="JSX-VT-eWP" secondAttribute="leading" id="Fgi-xf-Q4J"/>
+                            <constraint firstItem="ubt-x7-6bH" firstAttribute="centerX" secondItem="Qer-iI-rNd" secondAttribute="centerX" id="YMZ-YB-S1i"/>
+                            <constraint firstItem="ubt-x7-6bH" firstAttribute="top" secondItem="Qer-iI-rNd" secondAttribute="topMargin" constant="-44" id="rvf-QO-cAp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ubt-x7-6bH" id="1PT-Qc-9Un"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RsQ-fe-FOL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.913043478261" y="18.75"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Ke-FR-Ddq">
             <objects>
@@ -61,7 +91,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbi-If-9xq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="19"/>
+            <point key="canvasLocation" x="191" y="19"/>
         </scene>
     </scenes>
     <resources>
